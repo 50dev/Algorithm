@@ -5,7 +5,7 @@
 
     #define MAX_LEN 1000001
 
-    void printArray(int *arr, int len) {
+    void printIntArray(int *arr, int len) {
         for(int i=0; i<len; i++) {
             printf("%d ", arr[i]);
         }
@@ -76,13 +76,13 @@
         buildPi(P, pi);
 
         //Test : print pi
-    //    printArray(pi, 100);
+    //    printIntArray(pi, 100);
 
         //kmp
         kmp(T, P, pi, out);
 
         printf("%d\n",out[0]);
-        printArray(out+1, out[0]);
+        printIntArray(out+1, out[0]);
 
         return 0;
     }
